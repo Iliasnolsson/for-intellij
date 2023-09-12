@@ -1,0 +1,46 @@
+{
+  "name": "@iliasnolsson/for-intellij",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/package.umd.js",
+  "module": "./dist/package.es.js",
+  "types": "./dist/package.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/package.es.js",
+      "require": "./dist/package.umd.js"
+    },
+    "./package.json": "./package.json",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*",
+    "./node_modules/*": "./node_modules/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "idb": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "path": "^0.12.7",
+    "prettier": "2.6.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "tslib": "^2.4.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.2",
+    "vite-plugin-css-injected-by-js": "^3.1.1",
+    "vite-plugin-dts": "^2.3.0",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.6.5"
+  }
+}
